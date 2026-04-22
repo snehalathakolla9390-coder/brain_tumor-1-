@@ -1,0 +1,1 @@
+web: gunicorn Detecting_and_Diagnosing_Brain_Tumor_MRI_Image.wsgi --log-file -

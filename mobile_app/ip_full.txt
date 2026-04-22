@@ -1,0 +1,64 @@
+﻿
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : DINESH
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Mixed
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+
+Unknown adapter McAfee VPN:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : TAP-Windows Adapter V9
+   Physical Address. . . . . . . . . : 00-FF-D7-58-CF-69
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Wi-Fi 3:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Realtek 8852BE-VT Wireless LAN WiFi 6 PCI-E NIC #3
+   Physical Address. . . . . . . . . : 3E-8D-3D-FD-82-70
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Wi-Fi 5:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Realtek 8852BE-VT Wireless LAN WiFi 6 PCI-E NIC #5
+   Physical Address. . . . . . . . . : 3A-8D-3D-FD-82-70
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Realtek 8852BE-VT Wireless LAN WiFi 6 PCI-E NIC
+   Physical Address. . . . . . . . . : 38-8D-3D-FD-82-70
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::27c6:ace9:82b3:6a3b%16(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 172.19.34.67(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+   Lease Obtained. . . . . . . . . . : 18 March 2026 13:18:26
+   Lease Expires . . . . . . . . . . : 18 March 2026 13:38:50
+   Default Gateway . . . . . . . . . : 172.19.0.1
+   DHCP Server . . . . . . . . . . . : 172.19.0.1
+   DHCPv6 IAID . . . . . . . . . . . : 171478333
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-30-C7-4A-88-38-8D-3D-FD-82-70
+   DNS Servers . . . . . . . . . . . : fe80::e21c:fcff:fef4:47b6%16
+                                       172.19.0.1
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Bluetooth Device (Personal Area Network)
+   Physical Address. . . . . . . . . : 38-8D-3D-FD-82-71
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
