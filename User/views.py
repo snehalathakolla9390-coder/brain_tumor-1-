@@ -79,30 +79,17 @@ def Traning(request):
         healthy = np.array(healthy)
         tumor = np.array(tumor)
         All= np.concatenate((tumor, healthy))
-        plt.imshow(healthy[0])
-        plt.axis('off')
-        plt.show()
-        plt.imshow(tumor[0])
-        plt.axis('off')
-        plt.show()
+        # plt.imshow(healthy[0])
+        # plt.axis('off')
+        # plt.show()
+        # plt.imshow(tumor[0])
+        # plt.axis('off')
+        # plt.show()
         def pot_random(healthy , tumor , num=5):
             healthy_images = healthy[np.random.choice(healthy.shape[0], num, replace=False)]
             tumor_images = tumor[np.random.choice(tumor.shape[0], num, replace=False)]
-            plt.figure(figsize=(20, 8))
-            for i in range(num):
-                plt.subplot(1, num , i+1)
-                plt.title('healthy')
-                plt.imshow(healthy_images[i])
-                plt.axis('off')
-                
-            plt.figure(figsize=(20, 8))
-            for j in range(num):
-                plt.subplot(1, num , j+1)
-                plt.title('tumor')
-                plt.imshow(tumor_images[j])
-                plt.axis('off')
-            plt.show()
-        pot_random(healthy , tumor)
+            # plt.show()
+        # pot_random(healthy , tumor)
         class Dataset(object):
             def __getitem__(self, index):
                 raise NotImplementedError
@@ -208,11 +195,11 @@ def Traning(request):
             x[x<threshold]= minimum
             return x
         accuracy_score(y_true , threshold(outputs))
-        plt.figure(figsize=(10,5))
-        plt.plot(outputs)
-        plt.axvline(x=len(tumor) , color='r' ,linestyle='dashed')
-        plt.grid()
-        plt.show()
+        # plt.figure(figsize=(10,5))
+        # plt.plot(outputs)
+        # plt.axvline(x=len(tumor) , color='r' ,linestyle='dashed')
+        # plt.grid()
+        # plt.show()
         eta = 0.0001
         EPOCHS = 300
         optimizer = torch.optim.Adam(model.parameters() , lr = eta)
@@ -251,22 +238,22 @@ def Traning(request):
         y_true  = np.concatenate(y_true , axis=0).squeeze()
         acc= accuracy_score(y_true , threshold(outputs))
         
-        plt.figure(figsize=(5,5))
-        cm = confusion_matrix(y_true , threshold(outputs))
-        ax=plt.subplot()
-        sns.heatmap(cm , annot=True, fmt='g' , ax=ax , annot_kws={'size':20})
+        # plt.figure(figsize=(5,5))
+        # cm = confusion_matrix(y_true , threshold(outputs))
+        # ax=plt.subplot()
+        # sns.heatmap(cm , annot=True, fmt='g' , ax=ax , annot_kws={'size':20})
 
-        ax.set_xlabel('Predicted labels', fontsize=20)
-        ax.set_ylabel('True labels', fontsize=20)
-        ax.set_title('Confusion Matrix' , fontsize=20)
-        ax.xaxis.set_ticklabels(['healthy', 'tumor'], fontsize=15)
-        ax.yaxis.set_ticklabels(['healthy', 'tumor'], fontsize=15)
-        plt.show()
-        plt.figure(figsize=(10,5))
-        plt.plot(outputs)
-        plt.axvline(x=len(tumor) , color='r' ,linestyle='dashed')
-        plt.grid()
-        plt.show()
+        # ax.set_xlabel('Predicted labels', fontsize=20)
+        # ax.set_ylabel('True labels', fontsize=20)
+        # ax.set_title('Confusion Matrix' , fontsize=20)
+        # ax.xaxis.set_ticklabels(['healthy', 'tumor'], fontsize=15)
+        # ax.yaxis.set_ticklabels(['healthy', 'tumor'], fontsize=15)
+        # plt.show()
+        # plt.figure(figsize=(10,5))
+        # plt.plot(outputs)
+        # plt.axvline(x=len(tumor) , color='r' ,linestyle='dashed')
+        # plt.grid()
+        # plt.show()
         return render(request , 'Users/UserTraning.html' , {'acc':acc})
 
 
@@ -363,10 +350,10 @@ def predict(request):
         image_resized = cv2.merge([r, g, b])  # Convert BGR to RGB
 
         if not is_mri:
-            plt.imshow(image_resized)
-            plt.title("Invalid Image - Not an MRI Scan")
-            plt.axis('off')
-            plt.show()
+            # plt.imshow(image_resized)
+            # plt.title("Invalid Image - Not an MRI Scan")
+            # plt.axis('off')
+            # plt.show()
             messages.error(request, 'Invalid image. Please upload a valid MRI scanning image.')
             return render(request , 'Users/UserPredict.html')
 
@@ -389,14 +376,14 @@ def predict(request):
         prediction = threshold(output.cpu().numpy())
 
         # Show the image with the prediction result
-        plt.imshow(image_resized)
-        if prediction == 1:
-            plt.title("Tumor detected")
-        else:
-            plt.title("No tumor detected")
+        # plt.imshow(image_resized)
+        # if prediction == 1:
+        #     plt.title("Tumor detected")
+        # else:
+        #     plt.title("No tumor detected")
         
-        plt.axis('off')  # Hide axis
-        plt.show()    
+        # plt.axis('off')  # Hide axis
+        # plt.show()    
     return render(request , 'Users/UserPredict.html')
     
 
